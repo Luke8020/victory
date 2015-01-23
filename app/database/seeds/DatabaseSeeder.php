@@ -1,5 +1,8 @@
 <?php
 
+use Victory\Entities\User;
+use Victory\Entities\Dog;
+
 class DatabaseSeeder extends Seeder {
 
 	/**
@@ -9,32 +12,15 @@ class DatabaseSeeder extends Seeder {
 	 */
 	public function run()
 	{
+		User::truncate();
+		Dog::truncate();
+
 		Eloquent::unguard();
 
-		$this->call('DogsSeeder');
-		$this->command->info('Dogs have finished seeding');
+		$this->call('UsersTableSeeder');
+
+		$this->call('DogsTableSeeder');
 
 	}
 }
 
-		class DogSeeder extends Seeder {
-
-			public function run() {
-
-			$ashur = Dog::create(array(
-				'name'			=>	'Ashur',
-				'img'			=>	'{{ asset('images/danes/ashur-1.jpg') }}'
-			));
-
-			$breeze = Dog::create(array(
-				'name'			=>	'Breeze',
-				'img'			=>	'{{ asset('images/danes/breeze-1.jpg') }}'
-			));
-
-			$caruso = Dog::create(array(
-				'name'			=>	'Caruso',
-				'img'			=>	'{{ asset('images/danes/caruso-1.jpg') }}'
-			));
-
-		}
-	}

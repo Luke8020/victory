@@ -1,23 +1,13 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the Closure to execute when that URI is requested.
-|
-*/
+/**
+ * Show the home page with all of the dogs
+ */
+Route::get('/', [
+	'as' => 'home_path',
+	'uses' => 'DogsController@index'
+]);
 
-Route::get('/', function()
-{
-	return View::make('victory.index');
-});
+Route::resource('dogs', 'DogsController');
 
-Route::get('/pups', function()
-{
-	return View::make('victory.index');
-});
 

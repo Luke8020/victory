@@ -25,6 +25,17 @@
 
 				<ul class="models">
 
+					@foreach($dogs as $dog)
+
+						<!-- Portfolio Item 1 -->
+						<li class="mix man">
+							<a href="dogs/{{ $dog->id }}">
+								<img src="../images/danes/ashur-1.jpg" alt="" class="img-responsive" />
+							</a>
+						</li>
+
+					@endforeach
+
 					<!-- Portfolio Item 1 -->
 					<li class="mix man">
 						<a href="#">

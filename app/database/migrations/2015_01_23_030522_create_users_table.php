@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateDogsTable extends Migration {
+class CreateUsersTable extends Migration {
 
 	/**
 	 * Run the migrations.
@@ -12,11 +12,14 @@ class CreateDogsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('dogs', function(Blueprint $table)
+		Schema::create('users', function(Blueprint $table)
 		{
 			$table->increments('id');
-			$table->string('name');
-			$table->text('description');
+			$table->string('first_name');
+			$table->string('last_name');
+			$table->string('email');
+			$table->CHAR('password', 64);
+			$table->rememberToken();
 			$table->timestamps();
 		});
 	}
@@ -28,7 +31,7 @@ class CreateDogsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('dogs');
+		Schema::drop('users');
 	}
 
 }
