@@ -30,95 +30,11 @@
 						<!-- Portfolio Item 1 -->
 						<li class="mix man">
 							<a href="dogs/{{ $dog->id }}">
-								<img src="../images/danes/ashur-1.jpg" alt="" class="img-responsive" />
+								<img src="../images/dogs/{{ $dog->id }}.jpg" alt="" class="img-responsive" />
 							</a>
 						</li>
 
 					@endforeach
-
-					<!-- Portfolio Item 1 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/ashur-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 2 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/breeze-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 3 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/caruso-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 4 -->
-					<li class="mix woman">
-						<a href="#">
-							<img src="../images/danes/ebonee-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 5 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/effendi-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 6 -->
-					<li class="mix woman">
-						<a href="#">
-							<img src="../images/danes/gracie-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 7 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/legend-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 8 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/mica-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 9 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/neo-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 10 -->
-					<li class="mix man">
-						<a href="#">
-							<img src="../images/danes/riddick-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 11 -->
-					<li class="mix woman">
-						<a href="#">
-							<img src="../images/danes/sailor-moon-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
-
-					<!-- Portfolio Item 12 -->
-					<li class="mix woman">
-						<a href="#">
-							<img src="../images/danes/val-1.jpg" alt="" class="img-responsive" />
-						</a>
-					</li>
 
 				</ul>
 
