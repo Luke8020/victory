@@ -1,10 +1,14 @@
 <?php
 
+use Victory\Forms\SessionForm;
+
 class SessionsController extends \BaseController {
 
 
 	public function __construct(SessionForm $sessionForm)
 	{
+		$this->sessionForm = $sessionForm;
+
 		$this->beforeFilter('guest', ['except' => 'destroy']);
 	}
 
@@ -15,7 +19,7 @@ class SessionsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return View::make('admin.sessions.create');
 	}
 
 	/**
@@ -25,10 +29,14 @@ class SessionsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$input = Input::only('username', 'password');
+		$input = Input::only('email', 'password');
 
-		if (Auth::attempt($input, true))
-			return Redirect::intended('/');
+		$this->sessionForm->validate($input);
+
+		$remember = Input::get('remember') == '1' ? true : false;
+
+		if (Auth::attempt($input, $remember))
+			return Redirect::to('/admin');
 		else
 			return Redirect::back()->withErrors(['Invalid username or password.']);
 	}

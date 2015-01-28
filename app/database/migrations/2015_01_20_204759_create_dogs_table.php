@@ -16,7 +16,10 @@ class CreateDogsTable extends Migration {
 		{
 			$table->increments('id');
 			$table->string('name');
-			$table->text('description');
+			$table->date('birthdate');
+			$table->string('height');
+			$table->string('weight');
+			$table->text('about');
 			$table->timestamps();
 		});
 	}
