@@ -2,6 +2,9 @@
 
 use Victory\Entities\User;
 use Victory\Entities\Dog;
+use Victory\Entities\Puppy;
+use Victory\Entities\BlogPost;
+use Victory\Entities\Picture;
 
 class DatabaseSeeder extends Seeder {
 
@@ -14,12 +17,22 @@ class DatabaseSeeder extends Seeder {
 	{
 		User::truncate();
 		Dog::truncate();
+		Puppy::truncate();
+		BlogPost::truncate();
+		Picture::truncate();
 
 		Eloquent::unguard();
 
 		$this->call('UsersTableSeeder');
 
-		$this->call('DogsTableSeeder');
+		$this->call('FemaleDogsTableSeeder');
+		$this->call('MaleDogsTableSeeder');
+
+		$this->call('PuppiesTableSeeder');
+
+		$this->call('BlogPostsTableSeeder');
+
+		$this->call('PicturesTableSeeder');
 
 	}
 }

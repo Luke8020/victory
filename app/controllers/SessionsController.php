@@ -36,7 +36,7 @@ class SessionsController extends \BaseController {
 		$remember = Input::get('remember') == '1' ? true : false;
 
 		if (Auth::attempt($input, $remember))
-			return Redirect::to('/admin');
+			return Redirect::to('/admin/dogs');
 		else
 			return Redirect::back()->withErrors(['Invalid username or password.']);
 	}

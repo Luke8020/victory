@@ -39,6 +39,8 @@
 		<script src="../js/html5shiv.js"></script>
 		<script src="../js/respond.min.js"></script>
 		<![endif]-->
+
+		@yield('stylesheets')
 	</head>
 
 	@include('victory.layouts.partials._navbar')
@@ -84,5 +86,15 @@
 
 	<!-- jQuery Settings -->
 	<script src="{{ asset('js/settings.js') }}"></script>
+
+	<!-- Show Modal Window on Contact Form Submit -->
+	<script>
+		<?php if (Session::has('message')) { ?>
+	        $('#contact-modal').modal('show');
+	    <?php } ?>
+	</script>
+
+	@yield('scripts')
+
 </body>
 </html>

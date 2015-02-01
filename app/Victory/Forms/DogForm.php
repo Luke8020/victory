@@ -7,10 +7,8 @@ class DogForm extends FormValidator {
 
 	protected $rules = [
 		'name' => 'required',
-		'weight' => 'required',
-		'height' => 'required',
-		'about' => 'required',
-    	'birthdate' => 'required'
+		'is_male' => 'required',
+		'breed' => 'required'
 	];
 	
 }

@@ -1,0 +1,23 @@
+.widget-body {
+	padding: 20px;
+}
+
+/*********************************************
+    IMAGE CROP PREVIEW
+*********************************************/
+.eg-wrapper img {
+  width: 100%;
+}
+
+.eg-preview {
+  margin-top: 15px;
+}
+
+.preview {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: 200px!important;
+  height: 200px!important;
+}

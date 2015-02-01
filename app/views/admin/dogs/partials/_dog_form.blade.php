@@ -1,47 +1,48 @@
 
-@include('admin.layouts.partials._errors')
-
-<div class="form-group">
-	{{ Form::label('name', 'Name', ['class' => 'col-sm-2 control-label no-padding-right']) }}
-
-	<div class="col-sm-8">
-		{{ Form::text('name', null, ['class' => 'col-sm-12']) }}
+<div class="widget-box">
+	<div class="widget-header">
+		<h4 class="widget-title">Info</h4>
 	</div>
-</div>
+	<div class="widget-body">
 
-<div class="form-group">
-	{{ Form::label('weight', 'Weight', ['class' => 'col-sm-2 control-label no-padding-right']) }}
+		<div class="form-group">
+			{{ Form::label('breed', 'Breed', ['class' => 'col-sm-2 control-label no-padding-right']) }}
 
-	<div class="col-sm-8">
-		{{ Form::text('weight', null, ['class' => 'col-sm-12']) }}
-	</div>
-</div>
-
-<div class="form-group">
-	{{ Form::label('height', 'Height', ['class' => 'col-sm-2 control-label no-padding-right']) }}
-
-	<div class="col-sm-8">
-		{{ Form::text('height', null, ['class' => 'col-sm-12']) }}
-	</div>
-</div>
-
-<div class="form-group">
-	{{ Form::label('birthdate', 'Birth Date', ['class' => 'col-sm-2 control-label no-padding-right']) }}
-
-	<div class="col-sm-8">
-		<div class="input-group">
-			{{ Form::text('birthdate', null, ['class' => 'form-control date-picker', 'data-date-format' => 'dd-mm-yyyy']) }}
-			<span class="input-group-addon">
-				<i class="fa fa-calendar bigger-110"></i>
-			</span>
+			<div class="col-sm-8">
+				{{ Form::text('breed', null, ['class' => 'col-sm-12']) }}
+			</div>
 		</div>
-	</div>
-</div>
 
-<div class="form-group">
-	{{ Form::label('about', 'About', ['class' => 'col-sm-2 control-label no-padding-right']) }}
+		<div class="form-group">
+			{{ Form::label('name', 'Name', ['class' => 'col-sm-2 control-label no-padding-right']) }}
 
-	<div class="col-sm-8">
-		{{ Form::textarea('about', null, ['class' => 'col-sm-12']) }}
+			<div class="col-sm-8">
+				{{ Form::text('name', null, ['class' => 'col-sm-12']) }}
+			</div>
+		</div>
+
+		<div class="form-group">
+			{{ Form::label('gender', 'Gender', ['class' => 'col-sm-2 control-label no-padding-right']) }}
+
+			<div class="radio col-sm-8">
+				<label>
+					{{ Form::radio('is_male', '1', false, ['class' => 'ace']); }}
+					<span class="lbl"> Male</span>
+				</label>
+
+				<label>
+					{{ Form::radio('is_male', '0', false, ['class' => 'ace']); }}
+					<span class="lbl"> Female</span>
+				</label>
+			</div>
+		</div>
+
+		<div class="form-group">
+			{{ Form::label('about', 'About', ['class' => 'col-sm-2 control-label no-padding-right']) }}
+
+			<div class="col-sm-8">
+				{{ Form::textarea('about', null, ['class' => 'col-sm-12']) }}
+			</div>
+		</div>
 	</div>
 </div>

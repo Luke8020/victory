@@ -637,3 +637,52 @@ footer i {
 	}
 
 }
+
+/* CUSTOM
+==================================================================*/
+
+/* BLOG
+==================================================================*/
+
+.blog-carousel .owl-item{
+	min-height: 300px!important;
+}
+
+.blog-title-preview, .blog-preview p{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;  
+}
+
+.blog-title-preview p{
+   -webkit-line-clamp: 3; 
+   line-height: 3;    
+   max-height: 4.2;    
+}
+
+.blog-preview p{
+	-webkit-line-clamp: 5; 
+	line-height: 5;    
+	max-height: 7.692; 
+}
+
+.blog-preview p, .blog-full p{
+	font-family: "PT Sans",Helvetica,Arial,sans-serif!important;
+	font-size: 1.5em!important;
+	line-height: 1.5384!important;
+	color: #888!important;
+}
+
+.blog-preview p:not(:first-child) {
+    display: none;
+}
+
+/* PEDIGREE
+==================================================================*/
+
+.pedigree-horizontal {
+	border-right: 1px solid #333;
+	height: 50%;
+	width: 50%;
+}
