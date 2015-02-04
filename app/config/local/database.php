@@ -29,12 +29,13 @@ return array(
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
+			'port'		=> '33060',
 		),
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'homestead',
+			'database' => 'victory',
 			'username' => 'homestead',
 			'password' => 'secret',
 			'charset'  => 'utf8',

@@ -10,8 +10,8 @@
 		<div class="slider">
 			<div class="slides-container">
 
-				@foreach(range(1,8) as $index)
-					<img src="/images/slider/slider-{{ $index }}.jpg" alt="" />
+				@foreach(range(1,7) as $index)
+					<img src="/images/slider/slider-{{ $index }}.jpg" alt="Victory Great Danes Puppies and Breeding Dogs" />
 				@endforeach
 
 			</div>
