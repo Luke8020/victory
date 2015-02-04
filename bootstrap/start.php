@@ -24,10 +24,9 @@ $app = new Illuminate\Foundation\Application;
 |
 */
 
-$env = $app->detectEnvironment(array(
-    'local' => ['*.dev', gethostname()],
-    'production' => ['*.com', '*.net', '*.org', 'http://52.0.25.73/']
-));
+$env = $app->detectEnvironment(function() {
+    return gethostname() == 'victory.dev' ? 'local' : 'production';
+});
 
 /*
 |--------------------------------------------------------------------------
