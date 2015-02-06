@@ -45,23 +45,23 @@ Route::post('/', [
 /**
  * Show the details for a specified puppy
  */
-Route::get('/test', function() {
-	return View::make('victory.layouts.test');
-});
+// Route::get('/test', function() {
+// 	return View::make('victory.layouts.test');
+// });
 
-/**
- * Show the details for a specified puppy
- */
-Route::get('/seed', function() {
-	return View::make('victory.layouts.seeder');
-});
+// /**
+//  * Show the details for a specified puppy
+//  */
+// Route::get('/seed', function() {
+// 	return View::make('victory.layouts.seeder');
+// });
 
-/**
- * Show the details for a specified puppy
- */
-Route::get('/array', function() {
-	return View::make('victory.layouts.array');
-});
+// /**
+//  * Show the details for a specified puppy
+//  */
+// Route::get('/array', function() {
+// 	return View::make('victory.layouts.array');
+// });
 
 /*
 |--------------------------------------------------------------------------
