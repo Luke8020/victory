@@ -25,7 +25,7 @@ $app = new Illuminate\Foundation\Application;
 */
 
 $env = $app->detectEnvironment(function() {
-    return gethostname() == 'homestead' || 'luke-Satelite-P755' ? 'local' : 'production';
+    return gethostname() == 'homestead' ? 'local' : 'production';
 });
 
 
