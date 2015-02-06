@@ -97,7 +97,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 text-center">
-					<h2 class="wow fadeInLeftBig" data-wow-delay="0.3s">BLOG</h2>
+					<h2 class="wow fadeInLeftBig" data-wow-delay="0.3s">HOLIDAY FUN WITH VICTORY DANES</h2>
 					<h4 class="wow fadeInRightBig" data-wow-delay="0.5s">LATEST ENTRIES</h4>
 					<div class="divider"><i class="fa fa-book"></i></div>
 				</div>

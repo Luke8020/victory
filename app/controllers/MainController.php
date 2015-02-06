@@ -107,7 +107,7 @@ class MainController extends \BaseController {
 
 		return View::make('victory.blogposts.show')
 			->with('pageName', $blogPost->title)
-			->with('pageDescription', 'BLOG POST')
+			->with('pageDescription', 'News, Updates, and Holiday Fun!')
 			->with('picturePath', 'blog')
 			->with('blogPost', $blogPost)
 			->with('pictures', $pictures);
