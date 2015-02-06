@@ -31,7 +31,9 @@
 					<h2>AVAILABLE PUPPIES</h2>
 					<h4>HOME OF QUALITY BLUES AND BLACKS</h4>
 					<div class="divider"><i class="fa fa-bookmark"></i></div>
-					<p>Welcome to Victory Danes. Swipe left or right to see our gallery of available pups! If you are interested in adopting a Great Dane, give us a call or fill out our contact form below.</p>
+					<p>
+						We may have a few select pups available. All puppies are placed with a 6 year health coverage and lifetime of professional consulting support. We welcome your inquires. Pictured are examples of the pups more pictures and information about the specific information of available pups, color & sexes upon request. We may have plans in place for future litters so feel free to contact us, serious inquiries are always welcome. We accept non-refundable deposits. We look forward to hearing from you.
+					</p>
 				</div>
 			</div>
 			<div class="row wow bounceInUp" data-wow-delay="0.5s">
@@ -64,7 +66,7 @@
 					<h4 class="wow fadeInRightBig" data-wow-delay="0.5s">MEET THE PEDIGREE</h4>
 					<div class="divider"><i class="fa fa-paw"></i></div>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lacinia elementum velit, nec viverra nisi. Morbi gravida, massa sed dictum consectetur, turpis mi euismod elit, sit amet feugiat orci dui in felis. Duis purus ligula, consequat sit amet justo et, congue consectetur massa.
+						We are a small hobby breeding program with many years of experience. We welcome inquiries and encourage you to contact us to about Dane ownership and raising a Dane or if you have interest in future plans, and possible availability. Due to our non-refundable deposit waiting list and selective breeding process, we don't always have litter announcements or specific puppies mentioned as available on the web site. We are happy to try and help direct you to other litters from other breeders or older pups or Adults, if we don't have availability so feel free to inquire. Please feel free to email me I am always happy to answer any questions you may have, I am available for professional consulting in dog ownership and dog behavior modification. I answer every email, and always return calls. We do ask for your patience in replying as our family, both 2 and 4 legged, along with our primary boarding, behavior, animal care and consulting business keep us very busy.
 					</p>
 				</div>
 			</div>
