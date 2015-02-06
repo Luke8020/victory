@@ -15,7 +15,7 @@ class ContactRepository {
 	{
 	    return Mail::send('emails.contact', $input, function($message) use ($input)
 		{
-			$message->to('larkin@elkdevelopment.com')
+			$message->to('victrydane@aol.com')
 				->subject('Post From Victory Great Danes\' Website Contact Form')
 				->from($input['email']);
 		});

@@ -3,9 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-		<meta name="description" content="">
 		<meta name="author" content="">
-		<title>Victory Great Danes</title>
+		<title>Victory Great Danes | Home of Quality Blues and Blacks</title>
+		<meta name="description" content="Come check out our newest great danes puppies! Victory Great Danes also showcases some of the most beautiful, AKC certified blue and black Danes in the US.">
 		<link rel="shortcut icon" href="../favicon.png">
 
 		<!-- Bootstrap -->
@@ -42,6 +42,12 @@
 
 		@yield('stylesheets')
 	</head>
+
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PDCV49" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'}); var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:''; j.async=true;j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PDCV49');</script>
+	<!-- End Google Tag Manager -->
+
 
 	@include('victory.layouts.partials._navbar')
 
