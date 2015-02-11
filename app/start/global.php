@@ -57,6 +57,22 @@ App::error(function(Laracasts\Validation\FormValidationException $exception, $co
 	return Redirect::back()->withInput()->withErrors($exception->getErrors());
 });
 
+// 413 Redirect - File Upload is too large
+App::error(function ($exception, $code) 
+{
+	if ($code == 413) 
+		return Redirect::back()->withInput()->withError('The files are collectively too large. Try adding less images at a time.');
+});
+
+// 404, 403 Redirect
+App::error(function ($exception, $code) 
+{
+	switch ($code)  {
+		case 403: return Redirect::to('/');
+		case 404: return Redirect::to('/');
+	}
+});
+
 /*
 |--------------------------------------------------------------------------
 | Maintenance Mode Handler
