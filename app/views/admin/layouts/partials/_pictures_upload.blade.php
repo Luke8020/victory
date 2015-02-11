@@ -6,7 +6,7 @@
 
 		<div class="form-group">
 			<div class="col-xs-12">
-				{{ Form::file('pictures[]', ['id' => 'multiple-file-input', 'multiple' => true]) }}
+				{{ Form::file('pictures[]', ['id' => 'multiple-file-input', 'multiple' => ""]) }}
 			</div>
 		</div>
 

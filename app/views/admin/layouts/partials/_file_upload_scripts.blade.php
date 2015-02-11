@@ -32,16 +32,28 @@
 				}
 				reader.readAsDataURL(files[0]);
 				return true;
-			},before_remove : function() {
+			},
+			before_remove : function() {
 				$("#image-cropper").cropper("destroy");
 				$('#image-cropper-container').hide();
 				return true;
+			},
+			preview_error : function(filename, error_code) {
+				console.log(filename + " " + error_code);
 			}
+		});
+
+		$('#file-input').on('change', function() {
+			$("#file-input").prop("files", $(this).data('ace_input_files'));
 		});
 		/*********************************************
 	       	OTHER PICTURES FILE INPUT INITIALIZATION
 	    *********************************************/
 		$('#multiple-file-input').ace_file_input(fileInputOptions);
+
+		$('#multiple-file-input').on('change', function() {
+			$("#multiple-file-input").prop("files", $(this).data('ace_input_files'));
+		});
 
 		/*********************************************
 	       	MAIN PICTURE IMAGE CROPPER INITIALIZATION

@@ -11,7 +11,11 @@ class DogsController extends \BaseController {
 	protected $pictureRepository;
 	protected $dogRepository;
 
-	public function __construct(DogForm $dogForm, DogRepository $dogRepository, PictureRepository $pictureRepository)
+	public function __construct(
+		DogForm $dogForm, 
+		DogRepository $dogRepository, 
+		PictureRepository $pictureRepository
+	)
 	{
 		$this->dogForm = $dogForm;
 		$this->dogRepository = $dogRepository;
@@ -86,14 +90,10 @@ class DogsController extends \BaseController {
 		$mainPicture = Input::file('main_picture');
 
 		// Validate main picture
-		if (! Input::hasFile('main_picture'))
-		{
-			return Redirect::back()->withErrors('No file has been selected');
-		}
-		elseif (! $mainPicture->isValid())
-		{
-			return Redirect::back()->withErrors('Invalid file');
-		}
+		if (! Input::hasFile('main_picture')) return Redirect::back()->withInput()
+			->withErrors('No file has been selected');
+		elseif (! $mainPicture->isValid()) return Redirect::back()->withInput()
+			->withErrors('Invalid file');
 
 		$input = Input::all();
 
@@ -106,7 +106,8 @@ class DogsController extends \BaseController {
 
 		// Save Main Picture
 		$dimensions = Input::only('dataX', 'dataY', 'dataW', 'dataH');
-		$this->pictureRepository->saveMainPicture($mainPicture, $dog->id, $destinationPath, $dimensions);
+		$this->pictureRepository
+			->saveMainPicture($mainPicture, $dog->id, $destinationPath, $dimensions);
 
 		// Save Other Pictures
 		$otherPictures = Input::file('pictures');
