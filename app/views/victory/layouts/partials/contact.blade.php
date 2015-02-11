@@ -45,11 +45,9 @@
 		{{ Form::close() }}
 	</div>
 </section>
-
 <!-- ========== CONTACT END ========== -->
 
 <!-- ========== CONTACT MODAL START ========== -->
-
 <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -61,8 +59,8 @@
       </div>
       <div class="modal-body">
 
-        @if (Session::has('message'))
-        	{{{ Session::get('message')}}}
+        @if (Session::has('message')) 
+        	{{{ Session::get('message')}}} 
         @endif
 
       </div>
@@ -72,5 +70,4 @@
     </div>
   </div>
 </div>
-
 <!-- ========== CONTACT MODAL END ========== -->
