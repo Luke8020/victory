@@ -20,6 +20,4 @@ class ContactRepository {
 				->from($input['email']);
 		});
 	}
-
-	
 }

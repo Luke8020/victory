@@ -3,7 +3,7 @@
 return array(
 
 	'mandrill' => array(
-		'secret' => '68mxUOAyZNeobGRKi9FH3w',
+		'secret' => 'AkdiUlv8hAqKkHx94QIspw',
 	),
 
 );

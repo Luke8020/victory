@@ -5,8 +5,8 @@
 	</head>
 	<body>
 		<h2>
-			You have recieved a new Post from the Contact Form at 
-			<a href="http://victorygreatdanes.com">http://victorygreatdanes.com</a>
+			You have a new message from
+			<a href="http://victorygreatdanes.com"> Victory Great Danes</a>
 		</h2>
 
 		<div>

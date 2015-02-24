@@ -51,7 +51,7 @@ class MainController extends \BaseController {
 
 		$this->contactRepository->submit($input);
 
-		return Redirect::back()->withMessage('Your message was sent! Thank you for contacting us! We will reach out to you shortly.');
+		return Redirect::back()->withMessage('Your message was sent! Thank you for contacting us - we will reach out to you shortly.');
 	}
 
 	/**

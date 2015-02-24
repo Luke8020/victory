@@ -54,7 +54,7 @@ return array(
 	|
 	*/
 
-	'from' => array('address' => 'larkin@keystrokecreative.com', 'name' => 'Victory Great Danes'),
+	'from' => array('address' => 'contact@keystrokecreative.com', 'name' => 'Victory Great Danes'),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -120,5 +120,4 @@ return array(
 	*/
 
 	'pretend' => false,
-
 );

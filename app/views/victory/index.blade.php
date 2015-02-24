@@ -2,8 +2,6 @@
 
 @section('content')
 
-<body data-spy="scroll" data-target=".navbar-collapse">
-
 	<!-- ========== BANNER START ========== -->
 	<div id="banner">
 		<div class="slider">
