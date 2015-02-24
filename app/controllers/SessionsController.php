@@ -8,8 +8,6 @@ class SessionsController extends \BaseController {
 	public function __construct(SessionForm $sessionForm)
 	{
 		$this->sessionForm = $sessionForm;
-
-		$this->beforeFilter('guest', ['except' => 'destroy']);
 	}
 
 	/**
@@ -19,6 +17,8 @@ class SessionsController extends \BaseController {
 	 */
 	public function create()
 	{
+		if ( Auth::user() ) return Redirect::to('/admin/dogs');
+		
 		return View::make('admin.sessions.create');
 	}
 

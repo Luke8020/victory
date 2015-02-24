@@ -8,7 +8,7 @@
 
 @section('page-content')
 
-	{{ Form::open(['files' => true, 'class' => 'form-horizontal']) }}
+	{{ Form::open(['files' => true, 'class' => 'form-horizontal', 'name' => 'imageForm']) }}
 
 		@include('admin.layouts.partials._main_picture_upload')
 
