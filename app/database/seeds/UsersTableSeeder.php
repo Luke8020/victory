@@ -6,6 +6,8 @@ class UsersTableSeeder extends Seeder {
 
 	public function run()
 	{
+        Eloquent::unguard();
+        
         User::create([
 			'first_name' 		=> 'Larkin',
             'last_name' 		=> 'Whitaker',
